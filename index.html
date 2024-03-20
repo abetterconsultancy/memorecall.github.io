@@ -1,2 +1,132 @@
-<h1>Memorecall</h1>
-<h3>new new</h3>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorecall - Simple Note-Taking</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            overflow-x: hidden;
+            /* Prevent horizontal scroll */
+        }
+
+        header,
+        footer {
+            background-image: url('your-background-image.jpg');
+            /* Add your background image */
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Grey background with 50% opacity */
+            background-blend-mode: overlay;
+            /* Overlay the background image */
+            padding: 10px 20px;
+            color: #fff;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5em;
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        .menu a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+        }
+
+        .cover {
+            background-color: #555;
+            background-size: cover;
+            background-position: center;
+            height: calc(100vh - 60px);
+            /* Adjusted to accommodate header height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .intro-text {
+            width: 50%;
+            margin-bottom: 40px;
+        }
+
+        .intro-text h1 {
+            font-size: 3em;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .intro-text p {
+            font-size: 1.5em;
+            color: #fff;
+            margin-bottom: 40px;
+        }
+
+        .cta-button {
+            background-color: #ffde59;
+            color: #333;
+            text-decoration: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #ffd200;
+            /* Lighter shade on hover */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Memorecall</div>
+        <nav class="menu">
+            <a href="#">Home</a>
+            <a href="#">Feature</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="cover">
+        <div class="intro-text">
+            <h1>Memorecall</h1>
+            <p>The Ultimate Note-Taking App</p>
+        </div>
+        <a href="#" class="cta-button">Download on iOS</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Memorecall. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
